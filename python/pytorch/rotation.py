@@ -1,6 +1,6 @@
 import pytorch
 
-def eulerAnglesToRotationMatrix_pt(theta) :
+def eulerAnglesToRotationMatrix_batch(theta) :
 
     rot_sin = torch.sin(theta[:,0])
     rot_cos = torch.cos(theta[:,0])
